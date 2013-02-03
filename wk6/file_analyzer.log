@@ -1,3 +1,5 @@
 # Logfile created on 2013-02-03 11:39:37 -0800 by logger.rb/31641
 I, [2013-02-03T11:39:37.890001 #11768]  INFO -- : Reading file text.txt
 I, [2013-02-03T11:39:37.890949 #11768]  INFO -- : Statistics collected for text.txt
+I, [2013-02-03T11:41:27.860178 #11970]  INFO -- : Reading file text.txt
+I, [2013-02-03T11:41:27.861734 #11970]  INFO -- : Statistics collected for text.txt

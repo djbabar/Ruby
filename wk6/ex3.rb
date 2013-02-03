@@ -21,8 +21,8 @@ class File_analyzer
     @word_count = @text.split(" ").length
     @sentence_count = @text.split(/\.|\?|!/).length
     @paragraph_count = @text.split(/\n\n/).length
-    @avg_num_words_per_sentence = @word_count / sentence_count
-    @avg_num_sentences_per_paragraph = @sentence_count / paragraph_count
+    @avg_num_words_per_sentence = @word_count / @sentence_count
+    @avg_num_sentences_per_paragraph = @sentence_count / @paragraph_count
   end
 end
 
