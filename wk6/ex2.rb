@@ -1,6 +1,6 @@
 
 class Music
-  attr_reader :tag, :title, :artist, :album, :year, :comment, :genre
+  attr_reader :tag, :title, :artist, :album, :year, :comment, :zero_byte, :track, :genre
   def initialize(filename)
     f = File.new(filename)
     f.seek(-128, IO::SEEK_END)
@@ -13,7 +13,7 @@ class Music
   end
 
   def ID3_mapping(file_info)
-     @tag, @title, @artist, @album, @year, @comment, @genre = file_info.unpack('A3A30A30A30A4A28A1A1A1')
+     @tag, @title, @artist, @album, @year, @comment, @zero_byte, @track, @genre = file_info.unpack('A3A30A30A30A4A28A1A1C')
   end
 
 end
