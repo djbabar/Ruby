@@ -27,7 +27,7 @@ class File_analyzer
 end
 
 
-$LOG = Logger.new('fileread.log')
+$LOG = Logger.new('file_analyzer.log')
 file = File_analyzer.new(*ARGV)
 
 puts "Character count: #{file.character_count}"
